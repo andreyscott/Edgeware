@@ -45,8 +45,8 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="relative w-24 h-24 bg-amber-50 p-1 m[-8px]">
-                <Image src="/logo.svg" alt="Edgewares  Logo" fill sizes="40px" className="object-contain p-0.5" />
+              <div className="relative w-20 h-20 flex-shrink-0">
+                <Image src="/logo.svg" alt="Edgewares Logo" fill sizes="80px" className="object-contain" />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-display font-bold text-white text-lg">Edgewares</span>

@@ -3,18 +3,22 @@ export const SITE_TAGLINE = "Building Workforce & Institutional Development Infr
 export const SITE_DESCRIPTION =
   "Edgewares  is a workforce and institutional development ecosystem committed to building people, systems, and the future across Africa.";
 
+// Update this URL when the Google Form is ready
+export const FELLOWSHIP_FORM_URL = "#";
+
 export const CONTACT = {
   address: "9, Great Omoruyi Street, Off PZ Road, Sapele Road, Benin City, Nigeria",
   phones: ["08120801769", "08108161976"],
-  email: "info@edgewares.com",
+  email: "info@edgewaresholdings.com",
 };
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "What We Do", href: "/what-we-do" },
+  { label: "Our People", href: "/our-people" },
   { label: "Initiatives", href: "/initiatives" },
-  { label: "Fellowship", href: "/fellowship" },
+  { label: "Operator Fellowship", href: "/fellowship" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
 ];
@@ -65,33 +69,73 @@ export const CORE_OFFERINGS = [
 export const CURRICULUM_PILLARS = [
   {
     number: "01",
-    title: "Technical Capability",
+    icon: "💻",
+    title: "Technical & Digital Capability",
     description:
-      "Mastery of the core technical skills required for operational excellence in your specific domain and industry.",
+      "Software workflows, product thinking, and digital collaboration systems. Fellows develop deep fluency in the tools, platforms, and processes that define modern professional environments.",
   },
   {
     number: "02",
+    icon: "🧩",
     title: "Systems Thinking",
     description:
-      "Understanding how to design, analyze, and optimize complex systems—seeing the whole, not just the parts.",
+      "Decision-making frameworks, structured problem-solving, and institutional architecture. Fellows learn to see the whole picture — designing, analyzing, and optimizing complex systems that others only see in parts.",
   },
   {
     number: "03",
-    title: "Business Intelligence",
+    icon: "📊",
+    title: "Business & Financial Intelligence",
     description:
-      "Applying data-driven thinking and commercial acumen to make informed decisions that drive measurable outcomes.",
+      "Unit economics, market dynamics, and corporate strategy. Fellows develop the commercial acumen to understand how businesses are built, how value is created, and how organizations sustain competitive advantage.",
   },
   {
     number: "04",
-    title: "Leadership",
+    icon: "⚡",
+    title: "Execution Culture",
     description:
-      "Developing the interpersonal, strategic, and emotional intelligence needed to inspire teams and align organizations.",
+      "Radical accountability, operational consistency, and clear communication habits. Fellows internalize the discipline of doing what you say you will do — every time — and build the systems that make that possible at scale.",
   },
   {
     number: "05",
-    title: "Execution Discipline",
+    icon: "🔬",
+    title: "Real-World Labs",
     description:
-      "Building the habits, frameworks, and accountability structures that turn strategy into consistent, high-quality output.",
+      "Practical implementation exercises, simulated work environments, and live product assignments. Fellows don't just learn concepts — they apply them under conditions that mirror the real world, building genuine execution capability.",
+  },
+  {
+    number: "06",
+    icon: "🎙️",
+    title: "Leadership & Communication",
+    description:
+      "Boardroom-ready presentation skills and team alignment. Fellows develop the interpersonal and strategic intelligence needed to lead people, manage stakeholders, and communicate with clarity and authority.",
+  },
+  {
+    number: "07",
+    icon: "🌍",
+    title: "Global Competitiveness",
+    description:
+      "Direct exposure to international work standards and macroeconomic trends. Fellows are benchmarked against global standards, ensuring they can compete, collaborate, and lead in any context.",
+  },
+  {
+    number: "08",
+    icon: "📐",
+    title: "Structured Accountability",
+    description:
+      "A tight, metrics-driven learning environment with ongoing mentorship. Fellows operate within systems of clear deliverables, peer accountability, and practitioner feedback — the same conditions found in high-performance organizations.",
+  },
+  {
+    number: "09",
+    icon: "📁",
+    title: "Capability Portfolios",
+    description:
+      "Tangible, documented proof of things you have actually built. Fellows graduate with a structured portfolio that demonstrates their real capabilities — not just what they know, but what they can do.",
+  },
+  {
+    number: "10",
+    icon: "🤝",
+    title: "Network Access",
+    description:
+      "Permanent entry into the exclusive Edgewares operator community. Fellows gain lasting access to a curated network of ambitious professionals, practitioners, and leaders committed to building Africa's future.",
   },
 ];
 

@@ -3,50 +3,54 @@ import { CURRICULUM_PILLARS } from "@/lib/constants";
 
 export default function CurriculumPillars() {
   return (
-    <section className="bg-brand-cream py-24 md:py-32" aria-label="Curriculum Pillars">
+    <section className="bg-brand-cream py-24 md:py-32" aria-label="Curriculum — What We Deliver">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          label="Curriculum"
-          title="Five Pillars of Operator Excellence"
-          subtitle="The fellowship curriculum is built around five interlocking domains—each essential, none sufficient alone."
+          label="What We Deliver"
+          title="Ten Domains of Operator Excellence"
+          subtitle="The fellowship curriculum is built around ten interlocking domains — each essential, none sufficient alone. Together, they define what it means to operate at the highest level."
           align="center"
         />
 
-        <div className="relative">
-          {/* Vertical connecting line (desktop) */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-brand-gold/20 -translate-x-1/2" />
-
-          <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12">
-            {CURRICULUM_PILLARS.map((pillar, index) => (
-              <div
-                key={pillar.number}
-                className={`relative group ${
-                  index % 2 === 0 ? "lg:pr-12" : "lg:pl-12 lg:mt-24"
-                }`}
-              >
-                {/* Timeline dot (desktop) */}
-                <div className="hidden lg:flex absolute top-0 w-4 h-4 rounded-full bg-brand-gold border-4 border-white shadow-gold -translate-y-0 items-center justify-center" style={{
-                  [index % 2 === 0 ? "right" : "left"]: "-2.25rem",
-                }} />
-
-                <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-start gap-4">
-                    <span className="font-display font-bold text-3xl text-brand-gold flex-shrink-0">
-                      {pillar.number}
-                    </span>
-                    <div>
-                      <h3 className="font-display font-bold text-xl text-brand-navy mb-2">
-                        {pillar.title}
-                      </h3>
-                      <p className="text-brand-muted text-sm leading-relaxed">
-                        {pillar.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+          {CURRICULUM_PILLARS.map((pillar, index) => (
+            <div
+              key={pillar.number}
+              className="group bg-white rounded-2xl p-6 border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex flex-col"
+            >
+              {/* Number + Icon row */}
+              <div className="flex items-start justify-between mb-4">
+                <span className="font-display font-bold text-3xl text-brand-gold leading-none">
+                  {pillar.number}
+                </span>
+                <span className="text-2xl" aria-hidden="true">
+                  {pillar.icon}
+                </span>
               </div>
-            ))}
-          </div>
+
+              {/* Gold accent bar */}
+              <div className="w-8 h-0.5 bg-brand-gold rounded-full mb-4 group-hover:w-12 transition-all duration-300" />
+
+              {/* Title */}
+              <h3 className="font-display font-bold text-base text-brand-navy mb-3 leading-tight">
+                {pillar.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-brand-muted text-xs leading-relaxed flex-1">
+                {pillar.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom note */}
+        <div className="mt-14 text-center">
+          <p className="text-brand-muted text-sm max-w-2xl mx-auto leading-relaxed">
+            These ten domains are not taught in isolation. They are woven together through
+            live sessions, execution labs, peer cohort work, and real-world project assignments —
+            producing operators who can think, build, lead, and execute without hand-holding.
+          </p>
         </div>
       </div>
     </section>
