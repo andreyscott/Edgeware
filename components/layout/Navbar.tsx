@@ -109,15 +109,13 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 group inline-flex items-center ${
-                      isActive ? "text-brand-gold" : "text-brand-navy hover:text-brand-gold"
-                    }`}
+                    className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 group inline-flex items-center ${isActive ? "text-brand-gold" : "text-brand-navy hover:text-brand-gold"
+                      }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-brand-gold rounded-full transition-all duration-300 ${
-                        isActive ? "w-4/5" : "w-0 group-hover:w-4/5"
-                      }`}
+                      className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-brand-gold rounded-full transition-all duration-300 ${isActive ? "w-4/5" : "w-0 group-hover:w-4/5"
+                        }`}
                     />
                   </Link>
                 </li>
@@ -132,9 +130,8 @@ export default function Navbar() {
             >
               {/* Trigger */}
               <button
-                className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 group inline-flex items-center gap-1 ${
-                  isInitiativesActive ? "text-brand-gold" : "text-brand-navy hover:text-brand-gold"
-                }`}
+                className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 group inline-flex items-center gap-1 ${isInitiativesActive ? "text-brand-gold" : "text-brand-navy hover:text-brand-gold"
+                  }`}
                 aria-haspopup="true"
                 aria-expanded={dropdownOpen}
               >
@@ -148,19 +145,17 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                 </svg>
                 <span
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-brand-gold rounded-full transition-all duration-300 ${
-                    isInitiativesActive ? "w-4/5" : "w-0 group-hover:w-4/5"
-                  }`}
+                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-brand-gold rounded-full transition-all duration-300 ${isInitiativesActive ? "w-4/5" : "w-0 group-hover:w-4/5"
+                    }`}
                 />
               </button>
 
               {/* Dropdown panel */}
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 transition-all duration-200 origin-top ${
-                  dropdownOpen
-                    ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
-                    : "opacity-0 scale-95 -translate-y-1 pointer-events-none"
-                }`}
+                className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 transition-all duration-200 origin-top ${dropdownOpen
+                  ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
+                  : "opacity-0 scale-95 -translate-y-1 pointer-events-none"
+                  }`}
                 onMouseEnter={openDropdown}
                 onMouseLeave={closeDropdown}
                 role="menu"
@@ -179,22 +174,19 @@ export default function Navbar() {
                         href={child.href}
                         role="menuitem"
                         onClick={() => setDropdownOpen(false)}
-                        className={`flex items-start gap-3.5 px-4 py-3.5 transition-all duration-150 group/item ${
-                          i < INITIATIVES_GROUP.children.length - 1
-                            ? "border-b border-gray-50"
-                            : ""
-                        } ${
-                          isChildActive
+                        className={`flex items-start gap-3.5 px-4 py-3.5 transition-all duration-150 group/item ${i < INITIATIVES_GROUP.children.length - 1
+                          ? "border-b border-gray-50"
+                          : ""
+                          } ${isChildActive
                             ? "bg-brand-cream"
                             : "hover:bg-brand-cream"
-                        }`}
+                          }`}
                       >
                         <span className="text-lg mt-0.5 shrink-0">{child.icon}</span>
                         <div className="min-w-0">
                           <p
-                            className={`text-sm font-semibold leading-tight ${
-                              isChildActive ? "text-brand-gold" : "text-brand-navy group-hover/item:text-brand-gold"
-                            } transition-colors duration-150`}
+                            className={`text-sm font-semibold leading-tight ${isChildActive ? "text-brand-gold" : "text-brand-navy group-hover/item:text-brand-gold"
+                              } transition-colors duration-150`}
                           >
                             {child.label}
                           </p>
@@ -245,9 +237,8 @@ export default function Navbar() {
 
         {/* ── Mobile Menu ── */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            menuOpen ? "max-h-[600px] pb-6" : "max-h-0"
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-[600px] pb-6" : "max-h-0"
+            }`}
         >
           <div className="bg-white rounded-2xl shadow-navy-lg border border-gray-100 p-3 mt-2">
             <ul className="flex flex-col gap-0.5">
@@ -260,13 +251,11 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setMenuOpen(false)}
-                      className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-150 ${
-                        isSubItem ? "pl-8" : ""
-                      } ${
-                        isActive
+                      className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-150 ${isSubItem ? "pl-8" : ""
+                        } ${isActive
                           ? "bg-brand-navy text-brand-gold"
                           : "text-brand-navy hover:bg-brand-cream"
-                      }`}
+                        }`}
                     >
                       {isSubItem && (
                         <span className="w-1 h-1 rounded-full bg-brand-gold/40 shrink-0" />

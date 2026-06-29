@@ -112,6 +112,13 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+
+            {/* Legal Advisers */}
+            <div className="pt-4 border-t border-white/10">
+              <div className="relative h-30 w-40 opacity-60 hover:opacity-100 transition-opacity duration-200">
+                <Image src="/udochi.png" alt="Udochi &amp; Udochi" fill className="object-contain" />
+              </div>
+            </div>
           </div>
         </div>
 

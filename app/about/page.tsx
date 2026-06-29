@@ -45,7 +45,7 @@ export default function AboutPage() {
         />
 
         {/* Ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40 text-center">
           <FadeIn direction="down" duration={500}>
@@ -135,7 +135,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Vision Card */}
             <FadeIn direction="left" duration={650} className="h-full">
-              <div className="bg-brand-cream rounded-3xl p-10 md:p-12 border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between relative overflow-hidden group min-h-[320px] h-full">
+              <div className="bg-brand-cream rounded-3xl p-10 md:p-12 border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between relative overflow-hidden group min-h-80 h-full">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/5 rounded-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-500" />
                 <div>
                   <div className="flex items-center gap-3 mb-8">
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
             {/* Mission Card */}
             <FadeIn direction="right" duration={650} className="h-full">
-              <div className="bg-brand-navy rounded-3xl p-10 md:p-12 shadow-navy-lg hover:shadow-navy transition-all duration-300 flex flex-col justify-between relative overflow-hidden group text-white min-h-[320px] h-full">
+              <div className="bg-brand-navy rounded-3xl p-10 md:p-12 shadow-navy-lg hover:shadow-navy transition-all duration-300 flex flex-col justify-between relative overflow-hidden group text-white min-h-80 h-full">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-500" />
                 <div>
                   <div className="flex items-center gap-3 mb-8">

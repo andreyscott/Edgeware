@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION =
   "Edgewares  is a workforce and institutional development ecosystem committed to building people, systems, and the future across Africa.";
 
 // Update this URL when the Google Form is ready
-export const FELLOWSHIP_FORM_URL = "#";
+export const FELLOWSHIP_FORM_URL = "https://forms.gle/dhGUfyAtoSLCv9zW8";
 
 export const CONTACT = {
   address: "9, Great Omoruyi Street, Off PZ Road, Sapele Road, Benin City, Nigeria",
