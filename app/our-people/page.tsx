@@ -61,25 +61,18 @@ const DIRECTORS: Person[] = [
 
 const ADVISORY_COUNCIL: Person[] = [
   {
-    name: "Dr. Paul Orobator",
+    name: "Mr. Itua Emmanuel",
     role: "Advisory Council",
-    initials: "PO",
-    image: "/people/paul-orobator.jpg",
-    bio: "Dr. Paul Orobator is a seasoned lecturer at the University of Benin, bringing decades of academic rigour and institutional knowledge to Edgewares Holdings' strategic advisory.",
+    initials: "IE",
+    image: "/itua.jpg",
+    bio: "A seasoned banking professional, Mr. Itua Emmanuel brings deep financial sector expertise and strategic insight to Edgewares Holdings' advisory function.",
   },
   {
-    name: "Mr. Itua Iria",
+    name: "Mr. Osatohanmwen Osadiaye",
     role: "Advisory Council",
-    initials: "II",
-    image: "/people/itua-iria.jpg",
-    bio: "A seasoned banking professional, Mr. Itua Iria brings deep financial sector expertise and strategic insight to Edgewares Holdings' advisory function.",
-  },
-  {
-    name: "Mr. Paul Osadiaye",
-    role: "Advisory Council",
-    initials: "PO",
-    image: "/people/paul-osadiaye.jpg",
-    bio: "A digital transformation strategist, Mr. Paul Osadiaye advises Edgewares Holdings on technology, innovation, and the digital dimensions of workforce and institutional development.",
+    initials: "OO",
+    image: "/osadiaye.jpg",
+    bio: "A digital transformation strategist, Mr. Osatohanmwen Osadiaye advises Edgewares Holdings on technology, innovation, and the digital dimensions of workforce and institutional development.",
   },
 ];
 
