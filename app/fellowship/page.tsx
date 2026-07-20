@@ -70,17 +70,17 @@ export default function FellowshipPage() {
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 
         .fw-root {
-          --ink: #0C1712;
-          --forest: #123524;
-          --forest-deep: #081C13;
-          --forest-tint: #1B4531;
-          --gold: #C6A445;
-          --gold-bright: #E0C36B;
-          --parchment: #F3EFE4;
-          --paper: #FBF9F3;
-          --moss: #5C6E5A;
-          --line: rgba(198,164,69,0.35);
-          --line-dark: rgba(243,239,228,0.16);
+          --ink: #0D1B3E;
+          --forest: #1A2F5E;
+          --forest-deep: #080F22;
+          --forest-tint: #0D1B3E;
+          --gold: #C9A84C;
+          --gold-bright: #E8C97A;
+          --parchment: #F0F2F5;
+          --paper: #F9FAFB;
+          --moss: #6B7280;
+          --line: rgba(201,168,76,0.35);
+          --line-dark: rgba(249,250,251,0.16);
 
           font-family: 'Source Sans 3', sans-serif;
           font-size: 17px;

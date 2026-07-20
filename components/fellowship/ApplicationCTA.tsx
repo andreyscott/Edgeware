@@ -62,7 +62,7 @@ export default function ApplicationCTA() {
             <ul className="space-y-3 mb-10">
               {checklist.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-brand-gold/20 border border-brand-gold/40 flex items-center justify-center">
+                  <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-brand-gold/20 border border-brand-gold/40 flex items-center justify-center">
                     <svg
                       className="w-3 h-3 text-brand-gold"
                       fill="none"

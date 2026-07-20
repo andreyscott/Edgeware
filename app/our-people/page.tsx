@@ -118,7 +118,7 @@ function PersonCard({
   return (
     <div className="group bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col h-full">
       {/* Photo / Avatar */}
-      <div className={`relative bg-brand-navy flex items-center justify-center flex-shrink-0 ${avatarSize}`}>
+      <div className={`relative bg-brand-navy flex items-center justify-center shrink-0 ${avatarSize}`}>
         {/* Initials — always rendered; sits behind the image */}
         <div className={`absolute inset-0 flex items-center justify-center`}>
           <div className={`rounded-full bg-brand-gold/20 border-2 border-brand-gold/50 flex items-center justify-center font-display font-bold text-brand-gold ${avatarCircle}`}>
@@ -370,7 +370,7 @@ export default function OurPeoplePage() {
                 {/* Logo panel */}
                 <div className="hidden md:flex items-center justify-center bg-brand-cream/60 border-l border-gray-100 px-10 py-10">
                   <div className="flex flex-col items-center gap-4 text-center">
-                    <div className="relative w-40 h-40 flex-shrink-0">
+                    <div className="relative w-40 h-40 shrink-0">
                       <Image
                         src="/udochi.png"
                         alt="Udochi & Udochi Logo"

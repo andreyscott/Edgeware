@@ -83,12 +83,12 @@ export default function Navbar() {
 
           {/* ── Logo ── */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            <div className="relative w-14 h-14 shrink-0">
+            <div className="relative w-20 h-20 shrink-0">
               <Image
                 src="/logo.svg"
                 alt="Edgewares Logo"
                 fill
-                sizes="56px"
+                sizes="64px"
                 className="object-contain"
                 priority
               />

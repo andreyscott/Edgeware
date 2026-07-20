@@ -51,7 +51,7 @@ export default function HeroSection() {
           {/* Label pill */}
           <FadeIn direction="down" duration={500} delay={0}>
             <div className="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 rounded-full px-4 py-1.5 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0" />
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0" />
               <span className="text-brand-gold text-xs font-semibold tracking-[0.18em] uppercase">
                 Human Capability &amp; Institutional Development Platform
               </span>
@@ -125,7 +125,7 @@ export default function HeroSection() {
                   </div>
                   {i < chain.length - 1 && (
                     <svg
-                      className="w-8 h-4 text-brand-gold/40 mx-1 mb-5 flex-shrink-0"
+                      className="w-8 h-4 text-brand-gold/40 mx-1 mb-5 shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 32 16"

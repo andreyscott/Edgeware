@@ -185,7 +185,7 @@ export default function HomePage() {
                     </div>
                     {i < THEORY_STEPS.length - 1 && (
                       <svg
-                        className="w-6 h-6 text-brand-gold/40 rotate-90 sm:rotate-0 my-2 sm:my-0 flex-shrink-0"
+                        className="w-6 h-6 text-brand-gold/40 rotate-90 sm:rotate-0 my-2 sm:my-0 shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -229,7 +229,7 @@ export default function HomePage() {
             {INSIGHTS_ARTICLES.map((article, i) => (
               <FadeIn key={article.id} direction="up" delay={i * 90} duration={550}>
                 <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-card group hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200 h-full flex flex-col">
-                  <div className="h-36 bg-brand-navy relative overflow-hidden flex-shrink-0">
+                  <div className="h-36 bg-brand-navy relative overflow-hidden shrink-0">
                     <div
                       className="absolute inset-0"
                       style={{
@@ -293,7 +293,7 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <FadeIn direction="right" duration={600} delay={150}>
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-white font-bold text-sm px-8 py-4 rounded-xl transition-all duration-200 shadow-gold hover:-translate-y-0.5 whitespace-nowrap"
